@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Task Donskikh D</title>
+    <link rel="stylesheet" href="css/bootstrap-material-design.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Material Design for Bootstrap fonts and icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">SteamDiver</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Цели <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Требования</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Тест</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="jumbotron-fluid box-blue full-height text-center" id="top">
+    <h1>Web проект</h1>
+    <h2>"Выполнение SQL запроса"</h2>
+    <h3>автор: Донских Дмитрий 4 гр 1 курс</h3>
+</div>
+
+<div class="jumbotron-fluid full-height box-orange">
+    <div class="container">
+        <h2>Цель проекта</h2>
+        <p>Целью данного проекта является создание одностраничного WEB приложения, позволяющее выполнять SQL запросы к
+            заданной базе данных.</p>
+        <div class="alert alert-info">
+            SQL (ˈɛsˈkjuˈɛl; англ. structured query language — «язык структурированных запросов») — декларативный язык
+            программирования, применяемый для создания, модификации и управления данными в реляционной базе данных,
+            управляемой соответствующей системой управления базами данных.
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron">
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="SQLQuery" class="bmd-label-floating">Введите Ваш запрос</label>
+            <input type="text" class="form-control" id="SQLQuery">
+        </div>
+        <button class=" btn btn-primary active" type="submit">Выполнить запрос</button>
+    </form>
+</div>
+</body>
+</html>

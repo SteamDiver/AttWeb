@@ -1,0 +1,30 @@
+.box-blue {
+    background-color: #2ebcfc;
+}
+
+.box-orange {
+    padding-top: 64px;
+    background-color: #ff9800;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+#top {
+    padding-top: 30vh;
+    color: white;
+
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
+}
