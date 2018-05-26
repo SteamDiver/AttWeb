@@ -7,7 +7,7 @@ body{
 
 .box-darker {
     padding-top: 64px;
-    background-color: #03a9f4;
+    background-color: #038fce;
 }
 .block{
     margin-bottom: 64px;
@@ -21,17 +21,14 @@ body{
 #top {
     padding-top: 30vh;
 }
-
-h1 {
-    font-size: 4em;
+blockquote{
+    border-left: #3f51b5;
+    border-width: 4px;
 }
-h3{
-    margin-top: 32px;
+.blockquote-footer{
+    color: #a0dffb;
 }
-
-p{
-    font-size: 20px;
-}
-.blockquote{
-    font-size: 16px;
+footer{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }

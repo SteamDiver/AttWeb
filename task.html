@@ -34,49 +34,55 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#aim">Цели</a>
+                <a class="nav-link" href="#aim">Цель</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#task">Требования</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#work">Тест</a>
+                <a class="nav-link" href="#work">Реализация</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#author">Об авторе</a>
             </li>
         </ul>
     </div>
 </nav>
 
 <div class="jumbotron-fluid box-blue full-height text-center" id="top">
-    <h1>Web проект</h1>
-    <h2>"Выполнение SQL запроса"</h2>
-    <h3>автор: Донских Дмитрий 4 гр 1 курс</h3>
+    <h1 class="display-1">Web проект</h1>
+    <h2 class="display-3">"Выполнение SQL запроса"</h2>
     <br>
+
     <div class="btn-group">
         <a class="btn btn-light btn-outline-light" href="#aim">Цель</a>
-        <a class="btn btn-light btn-outline-light" href="#task">Требования к проекту</a>
+        <a class="btn btn-light btn-outline-light" href="#task">Требования</a>
         <a class="btn btn-light btn-outline-light" href="#work">Реализация</a>
     </div>
+
 </div>
 
 <div class="jumbotron-fluid full-height box-darker">
     <div class="container">
         <div class="block" id="aim">
-            <h2 class="display-3"><u>Цель проекта</u></h2>
+            <h2 class="display-3">Цель проекта</h2>
+            <hr>
             <p>Целью данного проекта является создание одностраничного WEB приложения, позволяющее
                 выполнять
                 SQL запросы к
                 заданной базе данных.</p>
-            <blockquote class="blockquote text-left">
+            <blockquote class="blockquote">
                 SQL (ˈɛsˈkjuˈɛl; англ. structured query language — «язык структурированных запросов») —
                 декларативный язык
                 программирования, применяемый для создания, модификации и управления данными в реляционной базе
                 данных,
                 управляемой соответствующей системой управления базами данных.
-                <footer class="blockquote-footer">Wikipedia</footer>
+                <div class="blockquote-footer">Wikipedia</div>
             </blockquote>
         </div>
         <div class="block" id="task">
-            <h2 class="display-3"><u>Требования, предъявляемые к проекту</u></h2>
+            <h2 class="display-3">Требования, предъявляемые к проекту</h2>
+            <hr>
             <h3 class="display-4">Оформление</h3>
             <p> Проект должен быть выполнен в виде одностраничного Web-приложения, содержащего форму для указания
                 входных
@@ -84,7 +90,8 @@
                 пользователь должен видеть результаты работы приложения в удобной и наглядной для него форме. </p>
             <p>В качестве выводимой информации будем считать количество затронутых строк таблицы. Сама таблица, БД и
                 параметры доступа к ней задаются поргрммно в скрипте.</p>
-            <p>Для визуального оформления решено попытаться использовать Material design как одно из последних веяний WEB
+            <p>Для визуального оформления решено попытаться использовать Material design как одно из последних веяний
+                WEB
                 дизайна </p>
 
             <h3 class="display-4">Практическая реализация</h3>
@@ -95,10 +102,11 @@
         </div>
 
         <div class="block">
-            <h2 class="display-3"><u>Технологии</u></h2>
+            <h2 class="display-3">Технологии</h2>
+            <hr>
             <p>В качестве стека технологий предполагается использование следующих компонентов:</p>
             <ul>
-                <li>Apache HTTP Server</li>
+                <li>Apache / NGINX</li>
                 <li>PHP >=5.4</li>
                 <li>HTML+CSS</li>
                 <li>JS</li>
@@ -109,16 +117,22 @@
 </div>
 
 <div class="jumbotron" id="work">
-    <form action="#" method="post">
-        <div class="form-group">
-            <label for="SQLQuery" class="bmd-label-floating">Введите Ваш запрос</label>
-            <input type="text" class="form-control" id="SQLQuery">
-        </div>
-        <button class="btn btn-primary active" type="submit">Выполнить запрос</button>
-    </form>
+    <div class="container">
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="SQLQuery" class="bmd-label-floating">Введите Ваш запрос</label>
+                <input type="text" class="form-control" id="SQLQuery">
+            </div>
+            <button class="btn btn-primary active" type="submit">Выполнить запрос</button>
+        </form>
+    </div>
 </div>
-<footer>
-
+<footer class="text-muted" id="author">
+    <div class="container">
+        <p class="float-right"><a href="mailto:steamdiver@yandex.ru">SteamDiver</a></p>
+        <p>Автор: Донских Дмитрий 4гр. 1 курс</p>
+        <p>Использование материалов в коммерческих целях допускается только с согласия автора</p>
+    </div>
 </footer>
 </body>
 </html>
