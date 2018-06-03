@@ -1,3 +1,4 @@
+<?php require_once "script.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,8 +21,8 @@
             integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
             crossorigin="anonymous"></script>
     <script>$(document).ready(function () {
-        $('body').bootstrapMaterialDesign();
-    });</script>
+            $('body').bootstrapMaterialDesign();
+        });</script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -96,7 +97,8 @@
 
             <h3 class="display-4">Практическая реализация</h3>
             <p>Задачу предлагается решить средствами PHP и MySql. Необходимо предварительно создать базу данных и
-                таблицу в ней. Заполнить какой-либо информацией. Поле ввода не должно позволять удалять и создавать новые таблицы</p>
+                таблицу в ней. Заполнить какой-либо информацией. Поле ввода не должно позволять удалять и создавать
+                новые таблицы</p>
         </div>
 
         <div class="block">
@@ -116,13 +118,16 @@
 
 <div class="jumbotron" id="work">
     <div class="container">
-        <form action="#" method="post">
+        <form action="#work" method="post">
             <div class="form-group">
                 <label for="SQLQuery" class="bmd-label-floating">Введите Ваш запрос</label>
-                <input type="text" class="form-control" id="SQLQuery">
+                <input type="text" class="form-control" name="query" id="SQLQuery">
             </div>
             <button class="btn btn-primary active" type="submit">Выполнить запрос</button>
         </form>
+        <div id="result">
+            <?= $alert; ?>
+        </div>
     </div>
 </div>
 <footer class="text-muted" id="author">
